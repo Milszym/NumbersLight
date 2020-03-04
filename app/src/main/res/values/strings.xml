@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NumbersLight</string>
+    <string name="unknown_error_message">Something went wrong.</string>
+    <string name="no_content_label">There is no data</string>
+    <string name="error_label">Some error happened :(</string>
+    <string name="retry_button_label">Retry</string>
+    <string name="retry_label">Please try loading data again:</string>
+    <string name="no_image_found">There should be a picture. But there isn\'t. That\'s sad :(</string>
+</resources>

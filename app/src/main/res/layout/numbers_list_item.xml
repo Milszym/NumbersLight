@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <ImageView
+        android:id="@+id/numberImage"
+        android:layout_width="@dimen/number_list_item_image_size"
+        android:layout_height="@dimen/number_list_item_image_size"
+        android:contentDescription="@string/no_image_found"
+        android:layout_marginLeft="@dimen/number_item_margin"
+        android:layout_marginTop="@dimen/number_item_margin"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/numberName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/number_item_margin"
+        android:layout_marginRight="@dimen/number_item_margin"
+        app:layout_constraintBottom_toBottomOf="@id/numberImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/numberImage"
+        app:layout_constraintTop_toTopOf="@id/numberImage"
+        tools:text="1.000.000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginTop="@dimen/number_item_margin"
+        android:background="@color/dividerColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/numberImage" />
+
+</merge>
